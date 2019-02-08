@@ -6,6 +6,7 @@ const Navbar = function (props) {
 
   function inputChange(e) {
     if (e.key == 'Enter') {
+      props.mainDispatch({type: 'SET_NAVBAR_OPEN', navbarOpen: false });
       props.search(props.searchTerm, props.sortOrder, true);
       props.history.push(`/search/`);
     }
