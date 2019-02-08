@@ -1,0 +1,124 @@
+html, body, #root, #content {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poiret One', "Helvetica Neue",
+    sans-serif;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#navbar {
+  background-color: black;
+  width: 300px;
+  border-right: 1px solid #333333;
+  vertical-align: top;
+  text-align: left;
+  left: 0;
+  top: 0;
+  z-index: 4
+}
+.link {
+  color: #f60;
+  cursor: pointer;
+  display: inline-block; 
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.link:hover {
+  color: #ce5200;
+  text-decoration: underline;
+}
+
+.orange-button {
+  background-color: #f60 !important;
+}
+.orange-button:hover {
+  background-color: #dd5a02 !important;
+}
+
+.ui.dropdown, .ui.dropdown .menu>.item {
+  color: black !important;
+  font-weight: bold !important;
+}
+.ui.dropdown .text {
+  font-size: 15px;
+}
+#navbar .option:hover {
+  background-color: #f60;
+}
+#navbar-toggler div {
+  background-color: #f60;
+}
+#navbar-toggler:hover div {
+  background-color: #d85600;
+}
+.divider {
+  width: calc(100% - 20px);
+  height: 1px;
+  margin-left: 10px;
+  background: lightgray;
+}
+#page {
+  display: inline-block;
+  width: calc(100% - 300px);
+  text-align: center;
+  margin-bottom: 50px;
+  min-height: 100%;
+}
+.category {
+  position: relative;
+}
+.category-title {
+  text-align: center;
+  display: block;
+  width: calc(100%);
+  font-size: 35px;
+  padding: 25px;
+  padding-top: 24px;
+  line-height: 30px;
+}
+.search-result {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  width: 250px;
+  font-size: 23px;
+}
+.cover-image {
+  -webkit-box-shadow: 1px 5px 21px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 5px 21px 3px rgba(0,0,0,0.75);
+  box-shadow: 1px 5px 21px 3px rgba(0,0,0,0.75);
+}
+.search-result img {
+  position: relative;
+  max-height: 320px;
+  max-width: 100%;
+  min-height: 270px;
+  min-width: 200px;
+  cursor: pointer;
+}
+.search-result img:hover {
+  -webkit-box-shadow: 1px 5px 21px 3px rgba(186, 0, 0,0.75);
+  -moz-box-shadow: 1px 5px 21px 3px rgba(186, 0, 0,0.75);
+  box-shadow: 1px 5px 21px 3px rgba(186, 0, 0,0.75);
+}
+
+.loader {
+  border: 7px solid white; /* Light grey */
+  border-top: 7px solid #f60;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 0.5s linear infinite;
+}
+.loader-container {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  font-size: 22px;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
