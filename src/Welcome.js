@@ -12,7 +12,13 @@ export default function Welcome() {
         <div className="link"
           onClick={() => window.open("http://www.penguinclassics.com")}>{"Penguin Classics"}
         </div>
-        Imprint. If you don't yet know what you're looking for, you can browse books by
+        Imprint. 
+        All book-specific content (covers, authors, descriptions etc.) is generously provided by Penguin's 
+        <div className="link"
+          onClick={() => window.open("https://developer.penguinrandomhouse.com/docs/read/enhanced_prh_api")}>{"open API"}
+        </div>.
+        <br></br><br></br>
+        If you don't yet know what you're looking for, you can browse books by
         subject category by selecting one of the categories in the navigation menu. If you already have something in mind,
         you can search books by their title or author by entering a search term in the search field in the navigation menu. 
         Results can be sorted by print score or in alphabetical order in both the searching and the browsing section.
